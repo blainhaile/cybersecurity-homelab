@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-based Cybersecurity Home Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <header class="bg-blue-600 text-white py-5">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Cloud-based Cybersecurity Home Lab</h1>
+            <p class="text-lg">Exploring Cybersecurity Practices using AWS Infrastructure</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Infrastructure Setup</h2>
+            <p>You created a cloud-based cybersecurity lab using AWS, designed for hands-on red and blue team activities. Below is a breakdown of the setup:</p>
+
+            <ul class="list-disc list-inside mt-4">
+                <li>Provisioned three EC2 virtual machines within a Virtual Private Cloud (VPC).</li>
+                <li>Configured a public subnet and an internet gateway for internet access.</li>
+                <li>Deployed the following virtual machines:
+                    <ul class="list-disc list-inside ml-6">
+                        <li><strong>Security Tools Box:</strong> Ubuntu Desktop for analysis tools.</li>
+                        <li><strong>Kali Linux:</strong> Attacker machine for penetration testing.</li>
+                        <li><strong>Windows 10 Workstation:</strong> Simulated user environment.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Manual Setup using AWS Console</h2>
+            <ul class="list-disc list-inside">
+                <li>Created a VPC named <code>Cloud Cybersecurity Home Lab Demo</code>.</li>
+                <li>Configured security groups to control traffic flow.</li>
+                <li>Created an SSH key pair named <code>cyber security</code>.</li>
+                <li>Launched the following EC2 instances:
+                    <ul class="list-disc list-inside ml-6">
+                        <li><strong>Kali Linux:</strong> Deployed using an official AMI from AWS Marketplace.</li>
+                        <li><strong>Security Tools Box:</strong> Deployed using a NetSpectrum Ubuntu Desktop AMI.</li>
+                        <li><strong>Windows 10 Workstation:</strong> Deployed using a Windows Server 2022 AMI.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Software Installation and Configuration</h2>
+            <ul class="list-disc list-inside">
+                <li><strong>Security Tools Box:</strong>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Installed Splunk Enterprise (free trial) for telemetry data analysis.</li>
+                        <li>Configured Splunk to receive data on port 9997.</li>
+                        <li>Installed Tenable Nessus (community edition) for vulnerability scanning.</li>
+                    </ul>
+                </li>
+                <li><strong>Windows 10 Workstation:</strong>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Installed Splunk Universal Forwarder to send data to the Security Tools Box.</li>
+                        <li>Configured Windows event log forwarding to the Splunk <code>win-security</code> index.</li>
+                    </ul>
+                </li>
+                <li><strong>Kali Linux:</strong>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Enabled RDP access for remote connections.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Automation (Optional)</h2>
+            <p>Although the infrastructure was set up manually using the AWS Console, future enhancements could include automating deployment with Terraform. This would allow for faster provisioning and decommissioning, saving AWS costs.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Purpose</h2>
+            <p>This cloud-based cybersecurity lab provides a safe and flexible environment for practicing security skills:</p>
+            <ul class="list-disc list-inside mt-4">
+                <li>Simulate attacks from the Kali Linux machine.</li>
+                <li>Analyze logs and events using Splunk Enterprise.</li>
+                <li>Conduct vulnerability assessments using Tenable Nessus.</li>
+            </ul>
+            <p class="mt-4">This lab setup supports hands-on learning and experimentation with real-world cybersecurity tools and scenarios.</p>
+        </section>
+
+        <footer class="bg-gray-200 text-center py-4 mt-8">
+            <p>Created by [Your Name] | GitHub Project Page</p>
+        </footer>
+    </main>
+</body>
+</html>
