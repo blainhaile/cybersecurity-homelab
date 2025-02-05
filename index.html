@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Red Team / Blue Team Cybersecurity Homelab</title>
+    <title class="font-bold">Cloud Red Team / Blue Team Cybersecurity Homelab</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-white font-sans leading-normal tracking-normal">
 
     <header class="bg-blue-600 text-white py-5">
         <div class="container mx-auto px-4">
@@ -15,25 +15,22 @@
         </div>
     </header>
 
-
-<nav class="bg-blue-500 text-white py-3">
-    <div class="container mx-auto px-4 flex justify-between">
-        <ul class="flex space-x-4">
-            <li><a href="index.html" class="hover:underline">Home</a></li>
-            <li><a href="project_steps.html" class="hover:underline">Project Steps</a></li>
-            <li><a href="resources.html" class="hover:underline">Resources</a></li>
-        </ul>
-    </div>
-</nav>
-
+    <nav class="bg-blue-500 text-white py-3">
+        <div class="container mx-auto px-4 flex justify-between">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline font-bold">Home</a></li>
+                <li><a href="project_steps.html" class="hover:underline font-bold">Project Steps</a></li>
+                <li><a href="resources.html" class="hover:underline font-bold">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main class="container mx-auto px-4 py-8">
         <section class="mb-8">
             <h2 class="text-2xl font-bold mb-4">Infrastructure Setup</h2>
             <p>I created a cloud-based cybersecurity lab using AWS, designed for hands-on red and blue team activities. Below is a breakdown of the setup:</p>
 
-            <!-- Add the image of the topology here -->
-                <img src="cybersecurity-homelab-topology.png" alt="Cybersecurity Homelab Topology" class="w-full max-w-4xl mx-auto my-6">
+            <img src="cybersecurity-homelab-topology.png" alt="Cybersecurity Homelab Topology" class="w-full max-w-4xl mx-auto my-6">
 
             <ul class="list-disc list-inside mt-4">
                 <li>Provisioned three EC2 virtual machines within a Virtual Private Cloud (VPC).</li>
@@ -105,29 +102,27 @@
             <p class="mt-4">I installed Windows on my MacBook to complete this entire project within a Windows environment, further enhancing my technical capabilities across platforms.</p>
         </section>
 
-
-<section class="mb-8">
-    <h2 class="text-2xl font-bold mb-4">Proof of Project Completion</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <figure>
-            <img src="kali-linux.PNG" alt="Kali Linux Setup Screenshot" class="w-full border rounded-xl shadow-md">
-            <figcaption class="mt-2 text-center">Kali Linux Setup</figcaption>
-        </figure>
-        <figure>
-            <img src="awsinstances.PNG" alt="AWS Instances Screenshot" class="w-full border rounded-xl shadow-md">
-            <figcaption class="mt-2 text-center">AWS Instances Configuration</figcaption>
-        </figure>
-        <figure>
-            <img src="nessus.PNG" alt="Nessus Setup Screenshot" class="w-full border rounded-xl shadow-md">
-            <figcaption class="mt-2 text-center">Nessus Vulnerability Scanner</figcaption>
-        </figure>
-        <figure>
-            <img src="splunk.PNG" alt="Splunk Setup Screenshot" class="w-full border rounded-xl shadow-md">
-            <figcaption class="mt-2 text-center">Splunk Configuration for Log Analysis</figcaption>
-        </figure>
-    </div>
-</section>
-
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Proof of Project Completion</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <figure>
+                    <img src="kali-linux.PNG" alt="Kali Linux Setup Screenshot" class="w-full border rounded-xl shadow-md">
+                    <figcaption class="mt-2 text-center">Kali Linux Setup</figcaption>
+                </figure>
+                <figure>
+                    <img src="awsinstances.PNG" alt="AWS Instances Screenshot" class="w-full border rounded-xl shadow-md">
+                    <figcaption class="mt-2 text-center">AWS Instances Configuration</figcaption>
+                </figure>
+                <figure>
+                    <img src="nessus.PNG" alt="Nessus Setup Screenshot" class="w-full border rounded-xl shadow-md">
+                    <figcaption class="mt-2 text-center">Nessus Vulnerability Scanner</figcaption>
+                </figure>
+                <figure>
+                    <img src="splunk.PNG" alt="Splunk Setup Screenshot" class="w-full border rounded-xl shadow-md">
+                    <figcaption class="mt-2 text-center">Splunk Configuration for Log Analysis</figcaption>
+                </figure>
+            </div>
+        </section>
 
         <footer class="bg-gray-200 text-center py-4 mt-8">
             <p>Created by Blain H</p>
